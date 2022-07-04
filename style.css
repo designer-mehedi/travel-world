@@ -4,6 +4,9 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .section-title h2{
     font-size: 5rem;
     text-transform: uppercase;
@@ -24,6 +27,13 @@ body{
 .subtitle h3{
     font-size: 1.7rem;
     letter-spacing: .1rem;
+}
+img{
+    max-width: 100%;
+}
+.content-width {
+    width: 40%;
+    margin: 0 5%;
 }
 /* Menubar Style */
 
@@ -106,10 +116,55 @@ figcaption h6{
 
 /* Trips Style */
 
-.trips-data-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.trips-data-img img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    position: relative;
 }
+.trips-data-img figure:hover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.trips-data-img figure{
+    overflow: hidden;
+}
+.trips-data-img .img-list figcaption{
+    position: relative;
+    top: -100px;
+    left: 0;
+}
+.img-list figcaption h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1rem;
+}
+.trips-data-img .img-list figcaption .link-button{
+    padding: 5px 20px;
+    background: rgb(207, 199, 108);
+    color: #fff;
+    border-radius: 30px;
+}
+.img-list figcaption .link-button:hover{
+    background-color: rgb(221, 221, 125);
+}
+
+/* Team Style */
+
+.team-data .team-member figcaption p{
+    width: 85%;
+    margin: auto;
+}
+
+.social-media-icons{
+    font-size: 30px;
+    color: orange;
+}
+
+/* Testimonial Style */
+
 
 
 
